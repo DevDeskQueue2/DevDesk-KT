@@ -1,0 +1,120 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 6rem 2rem 6rem;
+    background-color: rgba(0, 128, 0, 0.123);
+    //border: 1px solid red;
+    
+    @media @mobile {
+        .mobView();
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        height: 40em;
+        padding-top: 3.2em;
+        width: 70%;
+        margin: 0;
+        padding-left: 40em;
+
+        @media @mobile {
+            .mobView();
+            justify-content: flex-start;
+            font-size: 2em;
+            padding-left: 1em;
+            padding-top: 15em;
+            width: 100%;
+            height: 10%;
+        }
+    }
+
+
+    h1 {
+        font-size: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(43, 112, 121);
+        //border: 1px solid red;
+        position: absolute;
+        top: 1.3em;
+        left: 1em;
+
+        span {
+            color: rgb(209, 226, 132);
+            //border: 1px solid red;
+            }
+       
+        @media @mobile {
+            .mobView();
+            justify-content: center;
+            font-size: 8rem;
+            width: 94%;
+            top: 84px;
+            left: 16px;
+
+        span {
+            color: rgb(247, 163, 7);
+            }
+        }
+    }
+
+    .navigate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        margin-right: 20px;
+        width: 30%;
+        font-family: 'PT serif',;
+        
+        @media @mobile {
+            .mobView();
+            width: 200%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.5rem;
+            width: 320px;
+           
+            @media @mobile {
+                .mobView();
+                width: 60%;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 2rem;
+                color: black;
+
+            a:hover {
+                color: rgb(243, 161, 8);
+            }
+                @media @mobile {
+                    display: flex;
+                    justify-content: center;
+                    margin: 2rem;
+                    width: 100%;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }//navigate
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border: 1px solid rgb(10, 122, 122);
+        border-radius: 1rem;
+        padding: 10px;
+    }
+}//header
