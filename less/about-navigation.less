@@ -1,0 +1,103 @@
+header {
+    
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        height: 20em;
+        padding-top: 3.2em;
+        width: 70%;
+        margin: 0;
+        padding-left: 30em;
+
+        @media @mobile {
+            .mobView();
+            justify-content: flex-start;
+            font-size: 2em;
+            padding-left: 1em;
+            padding-top: 15em;
+            width: 100%;
+            height: 10%;
+        }
+    }
+
+    h1 {
+        font-size: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(43, 112, 121);
+        position: absolute;
+        top: 1.3em;
+        left: 2em;
+
+        span {
+            padding-left: 0.2em;
+            color: rgb(247, 163, 7);
+            }
+       
+        @media @mobile {
+            .mobView();
+            justify-content: center;
+            font-size: 8rem;
+            width: 94%;
+            top: 84px;
+            left: 16px;
+
+        span {
+            color: rgb(247, 163, 7);
+            }
+        }
+    }
+
+    .navigate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        margin-right: 20px;
+        width: 30%;
+        font-family: 'PT serif';
+        
+        @media @mobile {
+            .mobView();
+            width: 200%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.5rem;
+            width: 320px;
+           
+            @media @mobile {
+                .mobView();
+                width: 60%;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 2rem;
+
+                @media @mobile {
+                    display: flex;
+                    justify-content: center;
+                    margin: 2rem;
+                    width: 100%;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }//navigate
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border: 1px solid rgb(10, 122, 122);
+        border-radius: 1rem;
+        padding: 10px;
+    }
+}//header
